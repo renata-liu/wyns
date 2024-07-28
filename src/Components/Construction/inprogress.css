@@ -1,0 +1,55 @@
+h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 2rem;
+}
+
+.text-reflect, .text-reflect:before, .text-reflect span {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.text-reflect, .text-reflect:before, .text-reflect:after {
+    position: relative;
+}
+
+ .text-reflect {
+    padding-top: 9rem;
+}
+
+.text-reflect:before {
+    content: 'under construction...';
+    top: 2em;
+    transform: scale(1, -1);
+    backface-visibility: visible;
+    z-index: 1;
+    font-family: "Libre Baskerville";
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.text-reflect:after {
+    content: '';
+    display: block;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+
+.in-progress {
+    height: 60vh;
+}
+
+@media only screen and (max-width: 520px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
